@@ -1,0 +1,43 @@
+.post
+  margin-bottom: 25px
+  padding-bottom: 5px
+  //width: 95%
+  border-bottom: 2px solid rgba(78, 68, 60, 0.1)
+
+.post-header
+  position: relative
+  padding-top: 2.0em
+
+  .date
+    position: absolute
+    top: 0
+    color: #aaa
+    font-size: 1.2em
+    text-transform: uppercase
+
+.post-content
+  font-size: 1.2em
+  text-align: justify
+
+  p
+    margin-bottom: 0.7em
+
+  p, li
+    code
+      @extend .code
+      display: inline-block
+      padding: 0 1px
+      +border-radius(3px)
+      line-height: 1.4
+
+.highlight
+  @extend .code
+  margin-bottom: 0.7em
+  padding: 7px
+  +border-radius(3px)
+
+  pre
+    margin: 0
+
+  .gutter
+    width: 29px
